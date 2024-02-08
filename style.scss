@@ -15,6 +15,20 @@
     margin-right: auto;
   }
 
+  .header {
+
+  }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-row-top {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
   .services-link {
     color: #24A3FF;
     text-decoration: none;
