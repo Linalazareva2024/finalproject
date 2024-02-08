@@ -11,6 +11,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-row-top {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .links-langueges {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+  }
   .services-link {
     color: #24A3FF;
     text-decoration: none;
@@ -38,7 +55,6 @@
     font-weight: 700;
     line-height: 1;
     text-align: left;
-    padding-bottom: 20px;
     color: #F0145A;
   }
   .panel {
