@@ -15,13 +15,18 @@
     margin-right: auto;
   }
 
-  .header {
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
 
+  .header {
+    padding: 10px 15px;
   }
 
   .header-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   }
 
   .header-row-top {
@@ -30,13 +35,19 @@
   }
 
   .links-langueges {
-    text-decoration: none;
-    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
-    text-align: center;
+    gap:6px;
+  }
+
+  .telephone {
+    color: #FFFFFF;
+    text-decoration: none;
+    align-self:flex-end;
   }
 
   .services-link {
