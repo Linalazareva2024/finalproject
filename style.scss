@@ -56,7 +56,7 @@
     color: #fff;
   }
 
-  img {
+  img.square {
     width: 64px;
     height: 64px;
   }
@@ -91,8 +91,14 @@
 
   .partners {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr;
+    grid-template-columns:repeat(1fr);
+    grid-template-rows: repeat(6,1fr);
+  }
+
+  .collab {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
 @media (min-width: 768px) {

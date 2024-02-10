@@ -29,8 +29,6 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  position: absolute;
-  z-index: 5;
 }
 
 /*.panel-item {
@@ -55,7 +53,7 @@ h3 {
   color: #fff;
 }
 
-img {
+img.square {
   width: 64px;
   height: 64px;
 }
@@ -74,8 +72,6 @@ img {
   height: 10px;
   left: 20px;
   border-radius: 0px 0px 12px 12px;
-  position: relative;
-  z-index: 3;
 }
 
 .trust {
@@ -88,6 +84,18 @@ img {
   color: #323264;
   margin-left: auto;
   margin-right: auto;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.collab {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 @media (min-width: 768px) {
