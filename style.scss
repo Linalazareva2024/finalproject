@@ -30,13 +30,18 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    
-  }
+    position: relative;
+}
 
-  /*.panel-item {
-    display:flex;
-    flex-direction: column;
-  }*/
+  .panel::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: #CACADB;
+      border-radius: 0px 0px 12px 12px;
+      height: 10px;
+    }
+  
 
   h3 {
     font-family: Montserrat;
@@ -69,14 +74,6 @@
     padding: 14px 14px;
   }
 
-  .sub-panel {
-    color: #CACADB;
-    width: 335px;
-    height: 10px;
-    left: 20px;
-    border-radius: 0px 0px 12px 12px;
-  }
-
   .trust {
     font-family: Montserrat;
     font-size: 14px;
@@ -85,21 +82,25 @@
     letter-spacing: 1px;
     text-align: left;
     color: #323264;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  .collaboration {
+    background-color: #FFFFFF;
+    width: 100%;
   }
 
   .partners {
     display: grid;
-    grid-template-columns:repeat(1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
   }
 
   .collab {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
   }
+
 
 @media (min-width: 768px) {
   .wrapper {
@@ -108,9 +109,21 @@
 
   .panel {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 60px;
   }
- 
+  
+  .partners {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 3fr);
+
+    img {
+      width:256px;
+      height:120px;
+    }
+
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -121,8 +134,47 @@
 
   .panel {
     grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
 }
+
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1320px;
+  }
+
+  .partners img {
+    width: 360px;
+    height: 120px;
+  }
+
+}
+
+@media (min-width: 1920px) {
+
+  .wrapper {
+    width: 1600px;
+  }
+
+  .panel {
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:30px;
+  }
+
+  .partners {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 12px;
+    
+    img {
+      width: 430px;
+      height: 120px;
+    }
+  }
+
+}
+
 
 
