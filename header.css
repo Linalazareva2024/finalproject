@@ -4,23 +4,13 @@
 }
 
 .header-row-top {
-  width: 100%;
   align-items: center;
   background-color: rgba(245, 245, 250, 0.2);
   padding: 10px 15px;
 }
 
-.header-row-bottom a {
-  margin: 15px 0px 10px 0px;
-  text-decoration: none;
-}
-
-.hlegal {
-  font-weight: 700;
-  color: #FFFFFF;
-}
-.hlegal a::first-letter {
-  color: #F0145A;
+.header-row-bottom {
+  padding: 15px;
 }
 
 .settings {

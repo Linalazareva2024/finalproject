@@ -1,49 +1,17 @@
-.header {
-
-}
-
 .header-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  
-}
-
-.header-row-top {
-  width: 100%;
-  align-items: center;
-  background-color: #F5F5FA33;
-  padding: 10px 15px;
-}
-
-.header-row-bottom {
-  margin:15px 0px 10px 0px;
-}
-
-/*.header-row {
   display: flex;
   justify-content: space-between;
 }
 
 .header-row-top {
-  width: 100%;
   align-items: center;
   background-color: #F5F5FA33;
   padding: 10px 15px;
 }
 
 .header-row-bottom {
-  margin:15px 0px 10px 0px;
-}*/
-
-   .a {
-    text-decoration: none;
-    }
-
-.logo {
-  padding: 15px, 0px, 10px, 0px;
-  gap: 4px;
+  padding:15px;
 }
-
 
 .settings {
   display: block;
@@ -52,7 +20,6 @@
   padding: 10px 7px 10px 7px;
   background-color: #323264;
 }
-
 
 .steps {
   background-color: #FFFFFF;

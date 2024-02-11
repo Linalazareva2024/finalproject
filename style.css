@@ -15,6 +15,17 @@ body {
   margin-right: auto;
 }
 
+.solutions {
+  color: #FFFFFF;
+  text-transform: lowercase;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  padding: 130px 30px 160px 30px;
+}
+
 h1 {
   font-family: Montserrat;
   font-size: 38px;
@@ -78,13 +89,12 @@ img.square {
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: center;
   color: #323264;
 }
 
 .collaboration {
   background-color: #FFFFFF;
-  width: 100%;
 }
 
 .partners {
@@ -112,9 +122,9 @@ img.square {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 3fr);
   }
-  .partners img {
-    width: 256px;
-    height: 120px;
+  .collab img {
+    width: 33.33%;
+    object-fit: cover;
   }
 }
 @media (min-width: 1024px) {
@@ -125,14 +135,19 @@ img.square {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+  .collab img {
+    width: 33.33%;
+    object-fit: contain;
+  }
 }
 @media (min-width: 1440px) {
   .wrapper {
     width: 1320px;
   }
-  .partners img {
-    width: 360px;
+  .collab img {
+    width: 33.33%;
     height: 120px;
+    object-fit: contain;
   }
 }
 @media (min-width: 1920px) {
@@ -149,9 +164,10 @@ img.square {
     grid-template-rows: repeat(3, 1fr);
     border-radius: 12px;
   }
-  .partners img {
-    width: 430px;
+  .collab img {
+    width: 25%;
     height: 120px;
+    object-fit: contain;
   }
 }
 
