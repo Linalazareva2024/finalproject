@@ -147,21 +147,11 @@ body {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .collab img {
-      object-fit: cover;
-  }
-
 }
 
 @media (min-width: 1440px) {
   .wrapper {
     width: 1320px;
-  }
-
-  .collab img {
-    width: 33.33%;
-    height: 120px;
-    object-fit: contain;
   }
 
 }
@@ -184,12 +174,6 @@ body {
     border-radius: 12px;
   }
 
-    .collab img {
-      width: 25%;
-      height: 120px;
-      object-fit: contain;
-    }
-  
 }
 
 
