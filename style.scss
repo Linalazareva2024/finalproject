@@ -53,7 +53,6 @@ body {
       height: 10px;
     }
   
-
   h3 {
     font-family: Montserrat;
     font-size: 22px;
@@ -101,16 +100,19 @@ body {
 
   .partners {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
   }
 
-  .collab{
+  .collab img{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+@media(max-width: 768px){
+  .partners:nth-child(n+6) { 
+    display: none;
+  } 
+}
 
 @media (min-width: 768px) {
   .wrapper {
@@ -129,7 +131,6 @@ body {
   }
 
     .collab img {
-      width: 33.33%;
       object-fit: cover;
    } 
 
@@ -147,8 +148,7 @@ body {
   }
 
   .collab img {
-      width: 33.33%;
-      object-fit: contain;
+      object-fit: cover;
   }
 
 }
