@@ -37,9 +37,9 @@ h1 {
 }
 
 .panel {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .services {
@@ -71,60 +71,66 @@ h1 {
   bottom: -20px;
 } 
   
-  h3 {
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
-    text-align: left;
-    color: #24A3FF;
-  }
+.panel-h3 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  color: #24A3FF;
+}
 
-  .description {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    color: #fff;
-  }
+.panel-description {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
 
-  img.square {
-    width: 64px;
-    height: 64px;
-  }
+img.square {
+  width: 64px;
+  height: 64px;
+}
 
-  .square {
-    background-color:#FFFFFF;
-    width: 92px;
-    height: 92px;
-    border-radius: 24px;
-    padding: 14px 14px;
-  }
+.panel-square {
+  background-color:#FFFFFF;
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  padding: 14px 14px;
+}
 
-  .trust {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #323264;
-  }
+.trust {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #323264;
+  margin-bottom: 30px;
+}
 
-  .collaboration {
-    background-color: #FFFFFF;
-  }
+.collaboration {
+  background-color: #FFFFFF;
+}
 
-  .partners {
-    display: grid;
-  }
+.partners {
+  display: grid;
+}
 
-  .collab img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.collab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    img{
+      width: 100%;
+      height:100%;
   }
+}
 
 .comanda-columns{
   padding-top: 30px;
@@ -199,13 +205,111 @@ h1 {
   display: block; 
   width: 100%;
   height: 100%;
-  
 }
+
+.publications {
+  background-color: rgba(245, 245, 250, 1);
+  padding-top: 30px;
+}
+
+.wrapper-publications {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publications-link {
+  color: #24A3FF;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+  
+.publications-link::after {
+  content: "";
+  background-image: url("./images/Arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+.public-credo {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text; 
+  -moz-background-clip: text;
+  background-clip: text;
+  margin-top: 0px;
+  color: transparent;
+}
+
+.publications-container {
+  display: grid;
+  gap: 30px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.publication-item {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+}
+
+.pub-wrapper {
+  padding: 30px;
+}
+
+.pub-blue {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(36, 163, 255, 1);
+}
+
+.pub-grey {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(179, 179, 186, 1);
+}
+
+.pub-description {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
 
 @media(max-width: 768px){
   .partners a:nth-child(n+7) img{ 
     display: none;
   } 
+
 }
 
 @media (min-width: 768px) {
@@ -225,10 +329,6 @@ h1 {
     grid-template-rows: repeat(4, 3fr);
   }
 
-  .collab img {
-    object-fit: cover;
-  } 
-
   .comanda-columns{
     padding-top: 60px;
   }
@@ -237,6 +337,18 @@ h1 {
     object-fit: cover;
   }
 
+  .grid-item-a, .grid-item-b {
+    grid-column: span 1; 
+  }
+  
+  .grid-item-c {
+    grid-column: span 2; 
+  }
+
+  .wrapper-publications {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -261,7 +373,19 @@ h1 {
     padding-bottom: 5px;
   }
 
+  .publications{
+    padding: 30px 0;
+  }
+
+  .publications-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .publication-item{
+    grid-column: unset;
+  }
 }
+
 
 @media (min-width: 1440px) {
 
@@ -270,11 +394,14 @@ h1 {
 
 @media (min-width: 1920px) {
 
-
   .panel {
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap:30px;
+  }
+
+  .collaboration {
+    padding: 0 100px;
   }
 
   .partners {
@@ -288,7 +415,15 @@ h1 {
     padding-left: 160px;
     padding-right: 160px;
   }
+  .publications.wrapper {
+    padding: 0;
+  }
 
+  .wrapper-publications {
+    max-width: 1920px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
 }
 
 
