@@ -1,17 +1,20 @@
 @import url('./normalize.css');
 @import url('./fonts/stylesheet.css');
 @import url('./header.css');
+@import url('./panel.css');
+@import url('./comanda.css');
+@import url('./publications.css');
+@import url('./partners.css');
 
 * {
   box-sizing: border-box;
 }
   
-body {
-  background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-}
 
 .wrapper {
-  width: 315px;
+  max-width: 1600px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,96 +30,18 @@ body {
   padding: 130px 30px 160px 30px;
 }
 
-  h1 {
-    font-family: Montserrat;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 36.75px;
-    text-align: left;
-    color:#F0145A;
-    margin: 3px 0px 30px 0px;
-  }
-
-  .panel {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    position: relative;
-}
-
-  .panel::after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #CACADB;
-      border-radius: 0px 0px 12px 12px;
-      height: 10px;
-    }
-  
-  h3 {
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
-    text-align: left;
-    color: #24A3FF;
-  }
-
-  .description {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    color: #fff;
-  }
-
-  img.square {
-    width: 64px;
-    height: 64px;
-  }
-
-  .square {
-    background-color:#FFFFFF;
-    width: 92px;
-    height: 92px;
-    border-radius: 24px;
-    padding: 14px 14px;
-  }
-
-  .trust {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #323264;
-  }
-
-  .collaboration {
-    background-color: #FFFFFF;
-  }
-
-  .partners {
-    display: grid;
-  }
-
-  .collab img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
 @media(max-width: 768px){
-  .partners:nth-child(n+6) { 
+  .partners a:nth-child(n+7) img{ 
     display: none;
   } 
+
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .panel {
@@ -130,37 +55,82 @@ body {
     grid-template-rows: repeat(4, 3fr);
   }
 
-    .collab img {
-      object-fit: cover;
-   } 
+  .comanda-wrapper{
+    padding: 60px;
 
+  }
+
+  .grid-item-a, .grid-item-b {
+    grid-column: span 1; 
+  }
+  
+  .grid-item-c {
+    grid-column: span 2; 
+  }
+
+  .wrapper-publications {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media (min-width: 1024px) {
-
-  .wrapper {
-    width: 904px;
-  }
 
   .panel {
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .comanda-columns {
+    display: grid;
+    grid-template-columns: 400px auto;
+    align-items: stretch;
+
+    img {
+      height: 528px;
+    }
+  }
+ 
+  .comanda-credo {
+    font-size: 38px;
+    margin-top: 0;
+    line-height: 46.32px;
+  }
+
+  .comanda-info {
+    max-height: 528px;
+  }
+
+  .comanda-services-link {
+    padding-bottom: 5px;
+  }
+
+  .publications{
+    padding: 30px 0;
+  }
+
+  .publications-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .publication-item{
+    grid-column: unset;
+  }
 }
 
+
 @media (min-width: 1440px) {
-  .wrapper {
-    width: 1320px;
+  .comanda-columns img{
+    height: 344px;
+  }
+
+  .comanda-info{
+    max-height: 344px;
   }
 
 }
 
 @media (min-width: 1920px) {
-
-  .wrapper {
-    width: 1600px;
-  }
 
   .panel {
     grid-template-columns:repeat(3, 1fr);
@@ -168,12 +138,43 @@ body {
     gap:30px;
   }
 
+  .collaboration {
+    padding: 0 100px;
+  }
+
   .partners {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     border-radius: 12px;
+    overflow: hidden;
   }
 
+  .comanda-wrapper {
+      padding:60px 160px;
+    }
+
+  .comanda-columns {
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  .comanda-info {
+    max-height: 298px;
+  }
+
+  .comanda img {
+    height: 298px;
+  }
+
+  .publications.wrapper {
+    padding: 0;
+  }
+
+  .wrapper-publications {
+    max-width: 1920px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
 }
 
 

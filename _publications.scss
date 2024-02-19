@@ -1,0 +1,96 @@
+.publications {
+  background-color: rgba(245, 245, 250, 1);
+  padding-top: 30px;
+}
+
+.wrapper-publications {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publications-link {
+  color: #24A3FF;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+  
+.publications-link::after {
+  content: "";
+  background-image: url("./images/Arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+.public-credo {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text; 
+  -moz-background-clip: text;
+  background-clip: text;
+  margin-top: 0px;
+  color: transparent;
+}
+
+.publications-container {
+  display: grid;
+  gap: 30px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.publication-item {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+}
+
+.pub-wrapper {
+  padding: 30px;
+}
+
+.pub-blue {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(36, 163, 255, 1);
+}
+
+time {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(179, 179, 186, 1);
+}
+
+.pub-description {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
