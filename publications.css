@@ -1,5 +1,5 @@
 .publications {
-  background-color: rgba(245, 245, 250, 1);
+  background-color: rgb(245, 245, 250);
   padding-top: 30px;
 }
 
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   padding-bottom: 5px;
 }
-  
+
 .publications-link::after {
   content: "";
   background-image: url("./images/Arrow.png");
@@ -39,7 +39,7 @@
   line-height: 37px;
   text-align: left;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   margin-top: 0px;
@@ -49,15 +49,14 @@
 .publications-container {
   display: grid;
   gap: 30px;
-
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
+}
+.publications-container img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .publication-item {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
 
@@ -72,7 +71,7 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  color: rgba(36, 163, 255, 1);
+  color: rgb(36, 163, 255);
 }
 
 time {
@@ -82,7 +81,7 @@ time {
   line-height: 15px;
   letter-spacing: 1px;
   text-align: left;
-  color: rgba(179, 179, 186, 1);
+  color: rgb(179, 179, 186);
 }
 
 .pub-description {
@@ -92,5 +91,7 @@ time {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
+
+/*# sourceMappingURL=publications.css.map */
