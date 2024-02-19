@@ -90,4 +90,18 @@ header {
   height: 12px;
 }
 
+.services-link:hover {
+  color: rgb(240, 20, 90);
+  transition: background-color 0.3s ease;
+}
+
+.services-link:hover::after {
+  background-image: url("./images/hover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 9px;
+  width: 12px;
+  height: 12px;
+}
+
 /*# sourceMappingURL=header.css.map */

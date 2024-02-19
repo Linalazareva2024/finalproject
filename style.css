@@ -125,17 +125,24 @@ img.square {
   align-items: center;
 }
 .collab img {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
+.comanda-wrapper {
+  padding: 30px;
+}
+
 .comanda-columns {
-  padding-top: 30px;
+  margin-top: 30px;
   border-radius: 12px;
 }
 .comanda-columns img {
   width: 100%;
+  object-fit: cover;
   background: rgb(237, 237, 247);
+  display: block;
 }
 
 .comanda-info {
@@ -178,7 +185,6 @@ img.square {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 
 .slider-link {
@@ -279,7 +285,7 @@ img.square {
   color: rgb(36, 163, 255);
 }
 
-.pub-grey {
+time {
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 700;
@@ -318,11 +324,8 @@ img.square {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 3fr);
   }
-  .comanda-columns {
-    padding-top: 60px;
-  }
-  .comanda-leader {
-    object-fit: cover;
+  .comanda-wrapper {
+    padding: 60px;
   }
   .grid-item-a, .grid-item-b {
     grid-column: span 1;
@@ -343,11 +346,18 @@ img.square {
   .comanda-columns {
     display: grid;
     grid-template-columns: 400px auto;
+    align-items: stretch;
+  }
+  .comanda-columns img {
+    height: 528px;
   }
   .comanda-credo {
     font-size: 38px;
     margin-top: 0;
     line-height: 46.32px;
+  }
+  .comanda-info {
+    max-height: 528px;
   }
   .comanda-services-link {
     padding-bottom: 5px;
@@ -377,9 +387,18 @@ img.square {
     border-radius: 12px;
     overflow: hidden;
   }
-  .comanda {
-    padding-left: 160px;
-    padding-right: 160px;
+  .comanda-wrapper {
+    padding: 60px 160px;
+  }
+  .comanda-columns {
+    width: 100%;
+    padding-top: 0;
+  }
+  .comanda-info {
+    max-height: 298px;
+  }
+  .comanda img {
+    height: 298px;
   }
   .publications.wrapper {
     padding: 0;
