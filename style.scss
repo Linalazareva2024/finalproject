@@ -57,6 +57,7 @@
 
   .comanda-wrapper{
     padding: 60px;
+
   }
 
   .grid-item-a, .grid-item-b {
@@ -119,7 +120,13 @@
 
 
 @media (min-width: 1440px) {
+  .comanda-columns img{
+    height: 344px;
+  }
 
+  .comanda-info{
+    max-height: 344px;
+  }
 
 }
 
@@ -141,7 +148,7 @@
     border-radius: 12px;
     overflow: hidden;
   }
-  
+
   .comanda-wrapper {
       padding:60px 160px;
     }
