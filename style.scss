@@ -5,11 +5,11 @@
 @import url('./comanda.css');
 @import url('./publications.css');
 @import url('./partners.css');
+@import url('./footer.css');
 
 * {
   box-sizing: border-box;
 }
-  
 
 .wrapper {
   max-width: 1600px;
@@ -30,94 +30,6 @@
   padding: 130px 30px 160px 30px;
 }
 
-.footer-wrapper {
-  background-color: rgba(245, 245, 250, 1);
-  padding: 30px;
-}
-
-.footer-row-top {
-  margin-top: 30px;
-  gap: 10px;
-}
-
-address p {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
-  color: rgba(50, 50, 100, 1);
-  margin: 0;
-}
-
-.address-inline{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10px;
-  gap: 10px;
-}
-
-svg:hover path {
-  color: rgba(240, 20, 90, 1);
-}
-
-address a {
-  text-decoration: none;
-  font-family: Montserrat;
-  text-align: center;
-}
-
-.address-circle {
-  display: inline-flex;
-  justify-content: center;
-}
-
-.address-on-map {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgba(36, 163, 255, 1);
-}
-
-.footer-link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-}
-
-.footer-phone-number {
-  color: rgba(70, 70, 110, 1);
-}
-
-.footer-email {
-  color: rgba(36, 163, 255, 1);
-}
-
-.footer-email:hover {
-  color: rgba(240, 20, 90, 1);
-}
-
-.footer-rights {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: rgba(179, 179, 186, 1);
-  margin-top: 30px;
-  margin-bottom: 0;
-}
-
-@media(max-width: 768px){
-  .partners a:nth-child(n+7) img{ 
-    display: none;
-  } 
-
-}
 
 @media (min-width: 768px) {
   .wrapper {
@@ -129,11 +41,6 @@ address a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 60px;
-  }
-  
-  .partners {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 3fr);
   }
 
   .comanda-wrapper{
@@ -151,52 +58,6 @@ address a {
   .wrapper-publications {
     padding-left: 60px;
     padding-right: 60px;
-  }
-
-  .footer-wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  .footer-row-top {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-row-bottom {
-    justify-self: flex-end;
-    align-self: baseline;
-  }
-
-  .address-inline-two {
-    flex-direction: row;
-  }
-
-  .address-inline-three {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    align-items: center; 
-  }
-
-  .footer-rights {
-    margin-top: 0;
-  }
-
-  .address-circle::after {
-      content: '';
-      text-decoration: none;
-      margin-left: 10px;
-      margin-right: 10px;
-      background-color: rgba(179, 179, 186, 1);
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      display: flex; 
-      justify-self: center;
-      align-self: center;
   }
 }
 
@@ -243,14 +104,6 @@ address a {
     grid-column: unset;
   }
 
-  .address-inline {
-    align-self: flex-start;
-  }
-
-  .footer-grid{
-    display: grid;
-    grid-template-columns: 60% 40%;
-  }
 }
 
 
@@ -263,11 +116,6 @@ address a {
     max-height: 344px;
   }
 
-  .footer-wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
 }
 
 @media (min-width: 1920px) {
@@ -276,17 +124,6 @@ address a {
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap:30px;
-  }
-
-  .collaboration {
-    padding: 0 100px;
-  }
-
-  .partners {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    border-radius: 12px;
-    overflow: hidden;
   }
 
   .comanda-wrapper {
@@ -316,10 +153,6 @@ address a {
     padding-right: 160px;
   }
 
-  .footer-wrapper {
-    padding-left: 160px;
-    padding-right: 160px;
-  }
 }
 
 
