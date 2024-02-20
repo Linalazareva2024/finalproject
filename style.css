@@ -28,18 +28,13 @@
   padding: 130px 30px 160px 30px;
 }
 
-.footer {
+.footer-wrapper {
   background-color: rgb(245, 245, 250);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .footer-row-top {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 30px;
   gap: 10px;
 }
 
@@ -49,7 +44,6 @@ address p {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
   color: rgb(50, 50, 100);
   margin: 0;
 }
@@ -57,13 +51,23 @@ address p {
 .address-inline {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-bottom: 10px;
   gap: 10px;
+}
+
+svg:hover path {
+  color: rgb(240, 20, 90);
 }
 
 address a {
   text-decoration: none;
   font-family: Montserrat;
+  text-align: center;
+}
+
+.address-circle {
+  display: inline-flex;
+  justify-content: center;
 }
 
 .address-on-map {
@@ -71,7 +75,6 @@ address a {
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 1px;
-  text-align: left;
   text-transform: uppercase;
   color: rgb(36, 163, 255);
 }
@@ -89,6 +92,10 @@ address a {
 
 .footer-email {
   color: rgb(36, 163, 255);
+}
+
+.footer-email:hover {
+  color: rgb(240, 20, 90);
 }
 
 .footer-rights {
@@ -135,25 +142,27 @@ address a {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .footer-flex {
-    display: flex;
-    justify-content: space-between;
+  .footer-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .footer-row-top {
-    justify-self: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   .footer-row-bottom {
     justify-self: flex-end;
     align-self: baseline;
   }
   .address-inline-two {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
   }
   .address-inline-three {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-content: center;
     align-items: center;
   }
   .footer-rights {
@@ -168,8 +177,9 @@ address a {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    display: inline-block;
-    background-position: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
   }
 }
 @media (min-width: 1024px) {
@@ -205,6 +215,13 @@ address a {
   .publication-item {
     grid-column: unset;
   }
+  .address-inline {
+    align-self: flex-start;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
 }
 @media (min-width: 1440px) {
   .comanda-columns img {
@@ -212,6 +229,10 @@ address a {
   }
   .comanda-info {
     max-height: 344px;
+  }
+  .footer-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 1920px) {
@@ -247,6 +268,10 @@ address a {
   }
   .wrapper-publications {
     max-width: 1920px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  .footer-wrapper {
     padding-left: 160px;
     padding-right: 160px;
   }
