@@ -1,3 +1,8 @@
+.collab-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .trust {
   font-family: Montserrat;
   font-size: 14px;
@@ -48,6 +53,13 @@
     grid-template-rows: repeat(3, 1fr);
     border-radius: 12px;
     overflow: hidden;
+  }
+}
+@media (min-width: 1920px) {
+  .collab-wrapper {
+    max-width: 1720px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
