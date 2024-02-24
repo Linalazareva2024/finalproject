@@ -1,8 +1,13 @@
+.comanda {
+  background-color: #fff;
+}
+
 .comanda-wrapper {
   padding: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  max-width: 1600px;
 }
 
 .comanda-columns {
@@ -32,6 +37,7 @@
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin: 0;
 }
 
 .comanda-name {
@@ -41,6 +47,7 @@
   font-weight: 700;
   line-height: 20px;
   text-align: left;
+  margin: 0;
 }
 
 .comanda-profession {
@@ -50,6 +57,7 @@
   line-height: 22px;
   text-align: left;
   color: #B3B3BA;
+  margin: 0;
 }
 
 .comanda-slider-links {
@@ -78,6 +86,56 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .comanda-wrapper {
+    padding: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .comanda-columns {
+    display: grid;
+    grid-template-columns: 400px auto;
+    align-items: stretch;
+  }
+  .comanda img {
+    height: 528px;
+  }
+  .comanda-credo {
+    font-size: 38px;
+    margin-top: 0;
+    line-height: 46.32px;
+  }
+  .comanda-info {
+    max-height: 528px;
+  }
+  .comanda-services-link {
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 1440px) {
+  .comanda-info {
+    max-height: 344px;
+  }
+  .comanda img {
+    height: 344px;
+  }
+}
+@media (min-width: 1920px) {
+  .comanda-wrapper {
+    padding: 60px 0 60px 0;
+  }
+  .comanda-columns {
+    width: 100%;
+    padding-top: 0;
+  }
+  .comanda-info {
+    max-height: 298px;
+  }
+  .comanda img {
+    height: 298px;
+  }
 }
 
 /*# sourceMappingURL=comanda.css.map */

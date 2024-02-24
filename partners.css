@@ -28,4 +28,27 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .partners a:nth-child(n+7) img {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .partners {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 3fr);
+  }
+}
+@media (min-width: 1920px) {
+  .collaboration {
+    padding: 0 100px;
+  }
+  .partners {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
 /*# sourceMappingURL=partners.css.map */
