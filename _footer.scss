@@ -25,8 +25,8 @@ address p {
   gap: 10px;
 }
 
-svg:hover path {
-  color: rgba(240, 20, 90, 1);
+.svg:hover path {
+  fill: rgba(240, 20, 90, 1);
 }
 
 address a {
